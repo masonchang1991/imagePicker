@@ -19,10 +19,7 @@ extension ViewController {
             picker.allowsEditing = true
             picker.delegate = self
             self.present(picker, animated: true, completion: nil)
-            
-            
         }
-        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
@@ -33,17 +30,15 @@ extension ViewController {
         if let image = self.selectedImage.image {
             //拿照片比例啦
             let ratio = image.size.width / image.size.height
-            let newWidth = self.imageContainerView.frame.height * ratio
+            let newHeight = self.imageContainerView.frame.width / ratio
             
             //set照片長寬
-            self.selectedImage.frame.size = CGSize(width: newWidth - 120 * ratio, height: self.imageContainerView.frame.height - 120)
+            self.selectedImage.frame.size = CGSize(width: self.imageContainerView.frame.width, height: newHeight)
             //set照片中心
             self.selectedImage.center = CGPoint(x: self.imageContainerView.frame.width * 0.5, y: self.imageContainerView.frame.height * 0.5)
             //放照片啦
             self.selectedImage.image = image
-            
         }
-        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
