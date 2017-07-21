@@ -38,13 +38,10 @@ extension ViewController {
             self.selectedImage.center = CGPoint(x: self.imageContainerView.frame.width * 0.5, y: self.imageContainerView.frame.height * 0.5)
             //放照片啦
             self.selectedImage.image = image
+            //把照片加入拖曳跟縮放功能
             self.selectedImage.addGestureRecognizer(panRecognizer)
             self.selectedImage.addGestureRecognizer(pinchRecognizer)
-//            self.pinch.delegate = self
-//            pinch = UIPinchGestureRecognizer(target:self, action:#selector(pinch(recognizer:)))
-//            self.selectedImage.addGestureRecognizer(pinch)
-//            self.selectedImage.isUserInteractionEnabled = true
-//            self.selectedImage.addGestureRecognizer(panRecognizer)
+
         }
     }
     

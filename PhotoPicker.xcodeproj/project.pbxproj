@@ -15,7 +15,7 @@
 		935C778D1F21C9C9003BDCC0 /* ColorsAndFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C778C1F21C9C9003BDCC0 /* ColorsAndFonts.swift */; };
 		935C778F1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C778E1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift */; };
 		935C77911F21D273003BDCC0 /* PickerFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C77901F21D273003BDCC0 /* PickerFunction.swift */; };
-		93F865641F21E520001FBDFE /* PinchFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F865631F21E520001FBDFE /* PinchFunction.swift */; };
+		93F865641F21E520001FBDFE /* PinchAndPanFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F865631F21E520001FBDFE /* PinchAndPanFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		935C778C1F21C9C9003BDCC0 /* ColorsAndFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
 		935C778E1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewLayoutFunction.swift; sourceTree = "<group>"; };
 		935C77901F21D273003BDCC0 /* PickerFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFunction.swift; sourceTree = "<group>"; };
-		93F865631F21E520001FBDFE /* PinchFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchFunction.swift; sourceTree = "<group>"; };
+		93F865631F21E520001FBDFE /* PinchAndPanFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchAndPanFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			children = (
 				935C777A1F21BDDB003BDCC0 /* AppDelegate.swift */,
 				935C777C1F21BDDB003BDCC0 /* ViewController.swift */,
-				93F865631F21E520001FBDFE /* PinchFunction.swift */,
+				93F865631F21E520001FBDFE /* PinchAndPanFunction.swift */,
 				935C77901F21D273003BDCC0 /* PickerFunction.swift */,
 				935C778E1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift */,
 				935C778C1F21C9C9003BDCC0 /* ColorsAndFonts.swift */,
@@ -151,7 +151,7 @@
 			files = (
 				935C777D1F21BDDB003BDCC0 /* ViewController.swift in Sources */,
 				935C777B1F21BDDB003BDCC0 /* AppDelegate.swift in Sources */,
-				93F865641F21E520001FBDFE /* PinchFunction.swift in Sources */,
+				93F865641F21E520001FBDFE /* PinchAndPanFunction.swift in Sources */,
 				935C778F1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift in Sources */,
 				935C77911F21D273003BDCC0 /* PickerFunction.swift in Sources */,
 				935C778D1F21C9C9003BDCC0 /* ColorsAndFonts.swift in Sources */,

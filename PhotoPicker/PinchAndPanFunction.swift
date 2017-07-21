@@ -17,6 +17,7 @@ extension ViewController {
     }
     func pinchedView(_ sender:UIPinchGestureRecognizer){
         sender.view?.transform = (sender.view?.transform)!.scaledBy(x: sender.scale, y: sender.scale)
+        //變大後在設為1
         sender.scale = 1.0
     }
 }

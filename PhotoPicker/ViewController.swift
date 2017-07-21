@@ -22,15 +22,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        fullSize = imageContainerView.bounds.size
+        //跑layout啦
         layout(selectedImage, pickerBar, pickerButton, imageContainerView)
+        
+        //加入pan and pinch
         panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.draggedView(_:)))
         panRecognizer.delegate = self
-        
-        
-        
         pinchRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(self.pinchedView(_:)))
-        
         self.pinchRecognizer.delegate = self
         self.selectedImage.addGestureRecognizer(pinchRecognizer)
         self.selectedImage.isUserInteractionEnabled = true
