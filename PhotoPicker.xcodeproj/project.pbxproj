@@ -12,6 +12,9 @@
 		935C77801F21BDDB003BDCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935C777E1F21BDDB003BDCC0 /* Main.storyboard */; };
 		935C77821F21BDDB003BDCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935C77811F21BDDB003BDCC0 /* Assets.xcassets */; };
 		935C77851F21BDDB003BDCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935C77831F21BDDB003BDCC0 /* LaunchScreen.storyboard */; };
+		935C778D1F21C9C9003BDCC0 /* ColorsAndFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C778C1F21C9C9003BDCC0 /* ColorsAndFonts.swift */; };
+		935C778F1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C778E1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift */; };
+		935C77911F21D273003BDCC0 /* PickerFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C77901F21D273003BDCC0 /* PickerFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		935C77811F21BDDB003BDCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		935C77841F21BDDB003BDCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935C77861F21BDDB003BDCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935C778C1F21C9C9003BDCC0 /* ColorsAndFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
+		935C778E1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewLayoutFunction.swift; sourceTree = "<group>"; };
+		935C77901F21D273003BDCC0 /* PickerFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				935C777A1F21BDDB003BDCC0 /* AppDelegate.swift */,
 				935C777C1F21BDDB003BDCC0 /* ViewController.swift */,
+				935C77901F21D273003BDCC0 /* PickerFunction.swift */,
+				935C778E1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift */,
+				935C778C1F21C9C9003BDCC0 /* ColorsAndFonts.swift */,
 				935C777E1F21BDDB003BDCC0 /* Main.storyboard */,
 				935C77811F21BDDB003BDCC0 /* Assets.xcassets */,
 				935C77831F21BDDB003BDCC0 /* LaunchScreen.storyboard */,
@@ -139,6 +148,9 @@
 			files = (
 				935C777D1F21BDDB003BDCC0 /* ViewController.swift in Sources */,
 				935C777B1F21BDDB003BDCC0 /* AppDelegate.swift in Sources */,
+				935C778F1F21D0E1003BDCC0 /* PickerViewLayoutFunction.swift in Sources */,
+				935C77911F21D273003BDCC0 /* PickerFunction.swift in Sources */,
+				935C778D1F21C9C9003BDCC0 /* ColorsAndFonts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
