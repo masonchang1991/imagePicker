@@ -8,21 +8,33 @@
 
 import UIKit
                                         ///實作選取圖片完後觸發的事件         ///開啟或存取照片時畫面跳轉所用
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var pickerBar: UIView!
     @IBOutlet weak var pickerButton: UIButton!
     @IBOutlet weak var imageContainerView: UIView!
     
-    
+    var fullSize: CGSize!
+    var pinchRecognizer = UIPinchGestureRecognizer()
+    var panRecognizer = UIPanGestureRecognizer()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-   
-        layout(selectedImage, pickerBar, pickerButton, imageContainerView)
         
+        fullSize = imageContainerView.bounds.size
+        layout(selectedImage, pickerBar, pickerButton, imageContainerView)
+        panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.draggedView(_:)))
+        panRecognizer.delegate = self
+        
+        
+        
+        pinchRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(self.pinchedView(_:)))
+        
+        self.pinchRecognizer.delegate = self
+        self.selectedImage.addGestureRecognizer(pinchRecognizer)
+        self.selectedImage.isUserInteractionEnabled = true
+        self.selectedImage.isMultipleTouchEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,9 +45,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func pickerButtonAction(_ sender: UIButton) {
         self.getUserPhoto()
     }
+    
 
-       
-    
-    
 }
 

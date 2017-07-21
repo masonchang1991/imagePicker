@@ -21,6 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGa-Pg-381">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="com-re-aji">
+                                        <rect key="frame" x="165" y="272" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Tc4-ih-iJG"/>
+                                            <constraint firstAttribute="width" constant="45" id="gWH-WB-iU9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="com-re-aji" firstAttribute="centerY" secondItem="wGa-Pg-381" secondAttribute="centerY" id="0bm-sA-1PX"/>
+                                    <constraint firstItem="com-re-aji" firstAttribute="centerX" secondItem="wGa-Pg-381" secondAttribute="centerX" id="ksc-5J-bWk"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fT5-jZ-xD6">
                                 <rect key="frame" x="0.0" y="590" width="375" height="77"/>
                                 <subviews>
@@ -41,23 +58,6 @@
                                     <constraint firstAttribute="height" constant="77" id="aJW-2F-vyS"/>
                                     <constraint firstItem="gFY-1P-ide" firstAttribute="centerX" secondItem="fT5-jZ-xD6" secondAttribute="centerX" id="hKo-Wf-6DH"/>
                                     <constraint firstAttribute="bottom" secondItem="gFY-1P-ide" secondAttribute="bottom" constant="17" id="wJs-s9-AIN"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGa-Pg-381">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="com-re-aji">
-                                        <rect key="frame" x="164.5" y="272.5" width="45" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="Tc4-ih-iJG"/>
-                                            <constraint firstAttribute="width" constant="45" id="gWH-WB-iU9"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="com-re-aji" firstAttribute="centerX" secondItem="wGa-Pg-381" secondAttribute="centerX" id="QUT-WE-MX9"/>
-                                    <constraint firstItem="com-re-aji" firstAttribute="centerY" secondItem="wGa-Pg-381" secondAttribute="centerY" id="v4s-8P-kRH"/>
                                 </constraints>
                             </view>
                         </subviews>
